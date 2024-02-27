@@ -51,7 +51,7 @@ CREATE TABLE pet (
     pet_id NUMERIC(8,0) PRIMARY KEY,
     owner_id NUMERIC(8,0),
     species VARCHAR(20),
-    breed VARCHAR(15),
+    breed VARCHAR(30),
     pet_name VARCHAR(15),
     FOREIGN KEY (owner_id) REFERENCES customer(customer_id)
 );
