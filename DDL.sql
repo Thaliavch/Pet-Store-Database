@@ -1,4 +1,4 @@
-CREATE TABLE payment(
+CREATE TABLE payment (
 	payment_id NUMERIC(5,0) PRIMARY KEY,
 	total_amount NUMERIC(10,2),
 	cash BOOL,
@@ -6,7 +6,7 @@ CREATE TABLE payment(
 	debit BOOL
 	
 );
-CREATE TABLE stock(
+CREATE TABLE stock (
     item_id NUMERIC(5,0) PRIMARY KEY,
     stock_date_time TIMESTAMP,
     quantity INT
@@ -33,12 +33,11 @@ CREATE TABLE employee (
     SSN NUMERIC(9,0),
     start_date_id DATE,
     salary_hour NUMERIC(8,2),
-    employment_type VARCHAR(10),
-    pos VARCHAR(15)
+    position VARCHAR(25)
 	
 );
 
-CREATE TABLE customer(
+CREATE TABLE customer (
     customer_id NUMERIC(8,0) PRIMARY KEY,
     customer_name VARCHAR(30),
     date_of_birth DATE,
