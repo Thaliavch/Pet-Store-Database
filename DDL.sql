@@ -42,7 +42,6 @@ CREATE TABLE customer(
     customer_id NUMERIC(8,0) PRIMARY KEY,
     customer_name VARCHAR(30),
     date_of_birth DATE,
-    pet_id NUMERIC(8,0),
     phone NUMERIC(10,0),
     email VARCHAR(30),
     reward_points NUMERIC(5,0)
@@ -51,7 +50,7 @@ CREATE TABLE customer(
 CREATE TABLE pet (
     pet_id NUMERIC(8,0) PRIMARY KEY,
     owner_id NUMERIC(8,0),
-    category VARCHAR(20),
+    species VARCHAR(20),
     breed VARCHAR(15),
     pet_name VARCHAR(15),
     FOREIGN KEY (owner_id) REFERENCES customer(customer_id)
