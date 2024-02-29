@@ -397,6 +397,16 @@ INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (37, 37, 78904
 INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (38, 38, 89015);
 INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (39, 39, 90126);
 INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (40, 40, 1237);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (41, 1, 1238);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (42, 2, 12349);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (43, 3, 23460);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (44, 4, 34571);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (45, 5, 45682);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (46, 6, 56783);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (47, 7, 67894);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (48, 8, 78905);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (49, 9, 89016);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (50, 10, 90127);
 
 
 INSERT INTO sold_item (sales_item_id, trans_id, item_id, quantity, price)
