@@ -107,7 +107,22 @@ INSERT INTO item (barcode, item_id, item_name, exp_date, category, brand) VALUES
 (323456789012, 37, 'Blue Buffalo Dry Food', '2023-10-28', 'Food', 'Blue Buffalo'),
 (334567890123, 38, 'Blue Buffalo Treats', '2023-09-15', 'Food', 'Blue Buffalo'),
 (345678901234, 39, 'Iams Supplement', '2024-01-20', 'Food', 'Iams'),
-(356789012344, 40, 'Iams Wet Food', '2023-11-30', 'Food', 'Iams');
+(356789012344, 40, 'Iams Wet Food', '2023-11-30', 'Food', 'Iams'),
+(323456789013, 41, 'Acana Cat Food', '2023-09-15', 'Pet Food', 'Acana'),
+(334567890124, 42, 'Orijen Dog Food', '2023-10-10', 'Pet Food', 'Orijen'),
+(345678901235, 43, 'Wellness Wet Cat Food', '2023-11-05', 'Pet Food', 'Wellness'),
+(356789012445, 44, 'Taste of the Wild Puppy Food', '2023-12-20', 'Pet Food', 'Taste of the Wild'),
+(367890023456, 45, 'Canidae Cat Food', '2023-09-30', 'Pet Food', 'Canidae'),
+(378901232567, 46, 'Blue Buffalo Dog Food', '2023-10-25', 'Pet Food', 'Blue Buffalo'),
+(329012345678, 47, 'Nutro Kitten Food', '2023-11-20', 'Pet Food', 'Nutro'),
+(394123456789, 48, 'Instinct Dog Food', '2023-12-15', 'Pet Food', 'Instinct'),
+(301534567890, 49, 'Halo Cat Food', '2024-01-10', 'Pet Food', 'Halo'),
+(329456789012, 50, 'Natural Balance Dog Food', '2024-02-05', 'Pet Food', 'Natural Balance'),
+(334767890123, 51, 'Fromm Dog Food', '2024-03-01', 'Pet Food', 'Fromm'),
+(345672901234, 52, 'Earthborn Cat Food', '2024-03-26', 'Pet Food', 'Earthborn Holistic'),
+(359789012344, 53, 'Purina Cat Food', '2024-04-20', 'Pet Food', 'Purina'),
+(367890153455, 54, 'Science Diet Senior Dog Food', '2024-05-15', 'Pet Food', 'Science Diet'),
+(378903234566, 55, 'Merrick Dog Food', '2024-06-10', 'Pet Food', 'Merrick');
 
 -- Populating Payment Category
 INSERT INTO payment (payment_id, total_amount, cash, credit, debit) VALUES
