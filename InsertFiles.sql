@@ -290,3 +290,45 @@ INSERT INTO employee (employee_id, full_name, phone, email, SSN, start_date_id, 
 (238, 'Gabriel Bryant', 3957814206, 'gabriel.bryant89@yahoo.com', 674192850, '2017-09-05', 17, 'Sales Associate'),
 (239, 'Savannah Hayes', 5820361947, 'savannahh@hotmail.com', 295486312, '2018-01-23', 16, 'Cashier'),
 (240, 'Christopher Cole', 7394815026, 'christopher.c_90@gmail.com', 528736194, '2021-08-12', 18, 'Stock Clerk');
+
+-- Insert Recommendations
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (1, 1, 12345);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (2, 2, 23456);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (3, 3, 34567);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (4, 4, 45678);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (5, 5, 56789);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (6, 6, 67890);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (7, 7, 78901);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (8, 8, 89012);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (9, 9, 90123);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (10, 10, 1234);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (11, 11, 12346);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (12, 12, 23457);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (13, 13, 34568);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (14, 14, 45679);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (15, 15, 56780);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (16, 16, 67891);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (17, 17, 78902);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (18, 18, 89013);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (19, 19, 90124);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (20, 20, 1235);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (21, 21, 12347);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (22, 22, 23458);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (23, 23, 34569);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (24, 24, 45680);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (25, 25, 56781);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (26, 26, 67892);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (27, 27, 78903);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (28, 28, 89014);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (29, 29, 90125);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (30, 30, 1236);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (31, 31, 12348);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (32, 32, 23459);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (33, 33, 34570);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (34, 34, 45681);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (35, 35, 56782);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (36, 36, 67893);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (37, 37, 78904);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (38, 38, 89015);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (39, 39, 90126);
+INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (40, 40, 1237);
