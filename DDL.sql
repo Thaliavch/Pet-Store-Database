@@ -1,16 +1,15 @@
 CREATE TABLE payment (
-	payment_id NUMERIC(5,0) PRIMARY KEY,
-	total_amount NUMERIC(10,2),
-	cash BOOL,
-	credit BOOL,
-	debit BOOL
-	
+    payment_id NUMERIC(5,0) PRIMARY KEY,
+    total_amount NUMERIC(10,2),
+    cash BOOL,
+    credit BOOL,
+    debit BOOL
 );
+
 CREATE TABLE stock (
     item_id NUMERIC(5,0) PRIMARY KEY,
     stock_date_time TIMESTAMP,
     quantity INT
-
 );
 
 CREATE TABLE item (
@@ -21,9 +20,7 @@ CREATE TABLE item (
     category VARCHAR(20),
     brand VARCHAR(20),
     FOREIGN KEY (item_id) REFERENCES stock(item_id)
-
 );
-
 
 CREATE TABLE employee (
     employee_id NUMERIC(3,0) PRIMARY KEY,
@@ -34,7 +31,6 @@ CREATE TABLE employee (
     start_date_id DATE,
     salary_hour NUMERIC(8,2),
     position VARCHAR(25)
-	
 );
 
 CREATE TABLE customer (
@@ -65,13 +61,13 @@ CREATE TABLE recommendation (
 
 CREATE TABLE transaction (
     trans_id NUMERIC(5,0) PRIMARY KEY, 
-	payment NUMERIC(5,0),
+    payment NUMERIC(5,0),
     customer_id NUMERIC(8,0),
     cashier_id NUMERIC(3,0),
     trans_date TIMESTAMP,  
     FOREIGN KEY (customer_id) REFERENCES customer(customer_id),
     FOREIGN KEY (cashier_id) REFERENCES employee(employee_id),
-	FOREIGN KEY (payment) REFERENCES payment(payment_id)
+    FOREIGN KEY (payment) REFERENCES payment(payment_id)
 );
 
 CREATE TABLE sold_item (
@@ -82,4 +78,3 @@ CREATE TABLE sold_item (
     FOREIGN KEY (trans_id) REFERENCES transaction(trans_id),
     FOREIGN KEY (item_id) REFERENCES stock(item_id)    
 );
-
