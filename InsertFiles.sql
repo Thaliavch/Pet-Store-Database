@@ -288,7 +288,7 @@ INSERT INTO pet (pet_id, owner_id, species, breed, pet_name) VALUES
 (87658, 45682, 'Fish', 'Swordtail', 'Blade'),
 (98769, 56783, 'Rabbit', 'Mini Rex', 'Coco'),
 (09870, 67894, 'Dog', 'Chihuahua', 'Tiny'),
-(10981, 78905, 'Cat', 'Maine Coon', 'Tiger'),
+(10981, 78905, 'Cat', 'Maine Coon', 'Echo'),
 (21092, 89016, 'Bird', 'Conure', 'Kiwi'),
 (32113, 90127, 'Fish', 'Gourami', 'Goldie'),
 (43214, 01238, 'Rabbit', 'Holland Lop', 'Bunny'),
