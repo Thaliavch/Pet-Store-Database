@@ -356,7 +356,7 @@ INSERT INTO employee (employee_id, full_name, phone, email, SSN, start_date_id, 
 (239, 'Savannah Hayes', 5820361947, 'savannahh@hotmail.com', 295486312, '2018-01-23', 16, 'Cashier'),
 (240, 'Christopher Cole', 7394815026, 'christopher.c_90@gmail.com', 528736194, '2021-08-12', 18, 'Stock Clerk');
 
--- Insert Recommendations
+-- Populate Recommendations Table
 INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (1, 1, 12345);
 INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (2, 2, 23456);
 INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (3, 3, 34567);
@@ -408,6 +408,7 @@ INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (48, 8, 78905)
 INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (49, 9, 89016);
 INSERT INTO recommendation (rcmd_id, item_id, customer_id) VALUES (50, 10, 90127);
 
+-- Populating Transaction Table
 INSERT INTO transaction (trans_id, payment, customer_id, cashier_id, trans_date)
 VALUES
 (10001, 1, 67890, 204, '2023-08-11'),
@@ -471,6 +472,7 @@ VALUES
 (10059, 59, 90127, 209, '2023-09-16'),
 (10060, 60, 01238, 209, '2023-09-16');
 
+-- Populating Sold Item Table
 INSERT INTO sold_item (sales_item_id, trans_id, item_id, price)
 VALUES
 (1, 10001, 18, 30),
