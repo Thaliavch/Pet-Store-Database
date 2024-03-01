@@ -78,7 +78,6 @@ CREATE TABLE sold_item (
     sales_item_id NUMERIC(5,0) PRIMARY KEY, 
     trans_id NUMERIC(5,0),
     item_id NUMERIC(5,0),
-    quantity INT,
     price INT,
     FOREIGN KEY (trans_id) REFERENCES transaction(trans_id),
     FOREIGN KEY (item_id) REFERENCES stock(item_id)    
