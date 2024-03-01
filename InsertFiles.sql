@@ -124,7 +124,7 @@ INSERT INTO item (barcode, item_id, item_name, exp_date, category, brand) VALUES
 (367890153455, 54, 'Science Diet Senior Dog Food', '2024-05-15', 'Pet Food', 'Science Diet'),
 (378903234566, 55, 'Merrick Dog Food', '2024-06-10', 'Pet Food', 'Merrick');
 
--- Populating Payment Category
+-- Populating Payment Table
 INSERT INTO payment (payment_id, total_amount, cash, credit, debit) VALUES
 (1, 90.10, TRUE, FALSE, FALSE),
 (2, 79.50, FALSE, TRUE, FALSE),
@@ -187,7 +187,7 @@ INSERT INTO payment (payment_id, total_amount, cash, credit, debit) VALUES
 (59, 106.00, FALSE, TRUE, FALSE),
 (60, 100.70, FALSE, FALSE, TRUE);
 
---Populating Customer Category
+--Populating Customer Table
 INSERT INTO customer (customer_id, customer_name, date_of_birth, phone, email, reward_points) VALUES
 (12345, 'Liam Smith', '1990-05-15', 4769280351, 'liam_smith92@yahoo.com', 10),
 (23456, 'Olivia Johnson', '1985-12-03', 7291835064, 'olivia.j_85@hotmail.com', 15),
@@ -240,7 +240,7 @@ INSERT INTO customer (customer_id, customer_name, date_of_birth, phone, email, r
 (90127, 'Max Roberts', '1974-02-09', 6128304957, 'maxroberts74@aol.com', 29),
 (01238, 'Leo Turner', '1991-08-25', 4802579316, 'leo.turner91@hotmail.com', 1);
 
---Populating Pet Category
+--Populating Pet Table
 INSERT INTO pet (pet_id, owner_id, species, breed, pet_name) VALUES
 (54321, 12345, 'Dog', 'Labrador Retriever', 'Buddy'),
 (65432, 23456, 'Cat', 'Siamese', 'Mittens'),
@@ -313,7 +313,7 @@ INSERT INTO pet (pet_id, owner_id, species, breed, pet_name) VALUES
 (32115, 90124, 'Fish', 'Tetra', 'Tango'),
 (43216, 01235, 'Rabbit', 'Flemish Giant', 'Peter');
 
---Populating Employee Category
+--Populating Employee Table
 INSERT INTO employee (employee_id, full_name, phone, email, SSN, start_date_id, salary_hour, position) VALUES
 (201, 'Emily Johnson', 5218973468, 'emilyj_95@yahoo.com', 437549812, '2018-03-12', 20, 'Manager'),
 (202, 'James Brown', 6391852074, 'james.b_87@hotmail.com', 529837461, '2022-09-28', 18, 'Supervisor'),
