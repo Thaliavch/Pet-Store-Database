@@ -15,7 +15,7 @@ order by rank;
 
 --Question 3:
 update stock
-	set quantity = quantity + 30
+	set quantity = quantity + 30, stock_date_time = current_timestamp
 	where item_id between 21 and 30; --health products
 	
 --Question 4:
@@ -78,10 +78,11 @@ SELECT
     p.credit,
     p.debit,
     i.category,
-    AVG(si.quantity) AS avg_quantity_sold
+    AVG(stock.quantity) AS avg_quantity_sold
 FROM transaction t
 JOIN sold_item si ON t.trans_id = si.trans_id
 JOIN item i ON si.item_id = i.item_id
+JOIN stock ON stock.item_id = i.item_id
 JOIN payment p ON t.payment = p.payment_id
 GROUP BY p.cash, p.credit, p.debit, i.category
 order by 4;
