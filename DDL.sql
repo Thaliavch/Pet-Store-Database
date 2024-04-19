@@ -9,17 +9,16 @@ CREATE TABLE payment (
 CREATE TABLE stock (
     item_id NUMERIC(5,0) PRIMARY KEY,
     stock_date_time TIMESTAMP,
-    quantity INT
+    quantity INT,
+    FOREIGN KEY (item_id) REFERENCES item(item_id)
 );
 
 CREATE TABLE item (
-    barcode NUMERIC(12,0) PRIMARY KEY,
-    item_id NUMERIC(5,0),
+    item_id NUMERIC(5,0) PRIMARY KEY,
     item_name VARCHAR(30),
     exp_date DATE,
     category VARCHAR(20),
-    brand VARCHAR(20),
-    FOREIGN KEY (item_id) REFERENCES stock(item_id)
+    brand VARCHAR(20)
 );
 
 CREATE TABLE employee (
@@ -55,7 +54,7 @@ CREATE TABLE recommendation (
     rcmd_id NUMERIC(8,0) PRIMARY KEY,
     item_id NUMERIC(5,0),
     customer_id NUMERIC(8,0),
-    FOREIGN KEY (item_id) REFERENCES stock(item_id),
+    FOREIGN KEY (item_id) REFERENCES item(item_id),
     FOREIGN KEY (customer_id) REFERENCES customer(customer_id)
 );
 
@@ -76,5 +75,5 @@ CREATE TABLE sold_item (
     item_id NUMERIC(5,0),
     price INT,
     FOREIGN KEY (trans_id) REFERENCES transaction(trans_id),
-    FOREIGN KEY (item_id) REFERENCES stock(item_id)    
+    FOREIGN KEY (item_id) REFERENCES item(item_id)  
 );
