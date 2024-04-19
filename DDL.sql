@@ -6,19 +6,19 @@ CREATE TABLE payment (
     debit BOOL
 );
 
-CREATE TABLE stock (
-    item_id NUMERIC(5,0) PRIMARY KEY,
-    stock_date_time TIMESTAMP,
-    quantity INT,
-    FOREIGN KEY (item_id) REFERENCES item(item_id)
-);
-
 CREATE TABLE item (
     item_id NUMERIC(5,0) PRIMARY KEY,
     item_name VARCHAR(30),
     exp_date DATE,
     category VARCHAR(20),
     brand VARCHAR(20)
+);
+
+CREATE TABLE stock (
+    item_id NUMERIC(5,0) PRIMARY KEY,
+    stock_date_time TIMESTAMP,
+    quantity INT,
+    FOREIGN KEY (item_id) REFERENCES item(item_id)
 );
 
 CREATE TABLE employee (
