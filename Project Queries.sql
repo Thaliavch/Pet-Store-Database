@@ -138,7 +138,7 @@ GROUP BY day_times
 ORDER BY transaction_rank;
 
 
-SELECT * FROM transactions_time_ranking
+SELECT * FROM transactions_time_ranking;
 
 
 -- #10 Create a function that takes a month and year as argument and returns the id of the item that sold the most during that month.
