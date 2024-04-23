@@ -70,7 +70,7 @@ select * from top_buyers;
 
 
 -- question 7
--- Find the total amount of items sold per transaction for each payment method (cash, credit, debit) 
+-- Find the total amount of items sold for each payment method (cash, credit, debit) 
 -- and for each item category.
 
 SELECT 
