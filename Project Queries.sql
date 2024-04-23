@@ -70,36 +70,22 @@ select * from top_buyers;
 
 
 -- question 7
--- Find the top 3 categories with the highest average transaction amounts, along with the 
--- total number of transactions and the total revenue generated within each category.
+-- Find the total amount of items sold per transaction for each payment method (cash, credit, debit) 
+-- and for each item category.
 
-WITH category_transaction_amounts AS (
-    SELECT 
-        i.category,
-        t.trans_id,
-        SUM(si.price) AS transaction_amount
-    FROM transaction t
-    JOIN sold_item si ON t.trans_id = si.trans_id
-    JOIN item i ON si.item_id = i.item_id
-    GROUP BY i.category, t.trans_id
-),
-category_stats AS (
-    SELECT 
-        category,
-        COUNT(trans_id) AS total_transactions,
-        SUM(transaction_amount) AS total_revenue,
-        AVG(transaction_amount) AS avg_transaction_amount
-    FROM category_transaction_amounts
-    GROUP BY category
-)
 SELECT 
-    category,
-    total_transactions,
-    total_revenue,
-    avg_transaction_amount
-FROM category_stats
-ORDER BY avg_transaction_amount DESC
-LIMIT 3;
+    p.cash,
+    p.credit,
+    p.debit,
+    i.category,
+    COUNT(si.sales_item_id) AS total_sold
+FROM transaction t
+JOIN sold_item si ON t.trans_id = si.trans_id
+JOIN item i ON si.item_id = i.item_id
+JOIN stock ON stock.item_id = i.item_id
+JOIN payment p ON t.payment = p.payment_id
+GROUP BY p.cash, p.credit, p.debit, i.category
+order by 4;
 
 /*
 
